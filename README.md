@@ -26,7 +26,7 @@ from voronoi_interp_torch import voronoi_interpolate
 
 coords = torch.randint(0, 100, size=(100, 2)).cuda()
 values = torch.rand(100, 3).cuda()
-result = voronoi_interpolate(coords, values, 100, 100)
+result = voronoi_interpolate(coords, values, H=100, W=100)
 ```
 
 [Demo](./example/demo.ipynb) where backprop is tested. 
